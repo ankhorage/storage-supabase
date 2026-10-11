@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@ankhorage/supabase-storage • Paradox</title>
+    <title>@ankhorage/storage-supabase • Paradox</title>
     <style>
       :root {
         color-scheme: light;
@@ -115,7 +115,7 @@
     <div class="layout">
       <aside class="sidebar">
         <p class="muted">Generated with Paradox</p>
-        <h1>@ankhorage/supabase-storage</h1>
+        <h1>@ankhorage/storage-supabase</h1>
         <p>Type-safe Supabase Storage adapter for uploads, listing, URL resolution, and asset metadata.</p>
         <input id="search" class="search" type="search" placeholder="Search current view" />
         <nav aria-label="Documentation sections">
@@ -127,34 +127,14 @@
               </button>
             </li>
             <li>
-    <button class="nav-button" type="button" data-target="src/contracts/createContractsSupabaseStorageAdapter.ts">
-      src/contracts/createContractsSupabaseStorageAdapter.ts
-      <small>1 function</small>
-    </button>
-  </li><li>
-    <button class="nav-button" type="button" data-target="src/contracts/toMediaStorageAdapter.ts">
-      src/contracts/toMediaStorageAdapter.ts
-      <small>7 functions</small>
-    </button>
-  </li><li>
     <button class="nav-button" type="button" data-target="src/createSupabaseStorageAdapter.testSupport.ts">
       src/createSupabaseStorageAdapter.testSupport.ts
       <small>2 functions</small>
     </button>
   </li><li>
-    <button class="nav-button" type="button" data-target="src/createSupabaseStorageAdapter.ts">
-      src/createSupabaseStorageAdapter.ts
-      <small>12 functions</small>
-    </button>
-  </li><li>
-    <button class="nav-button" type="button" data-target="src/errors.ts">
-      src/errors.ts
-      <small>5 functions</small>
-    </button>
-  </li><li>
-    <button class="nav-button" type="button" data-target="src/storageNormalization.ts">
-      src/storageNormalization.ts
-      <small>13 functions</small>
+    <button class="nav-button" type="button" data-target="src/features/storage/adapters/createSupabaseStorageAdapter.ts">
+      src/features/storage/adapters/createSupabaseStorageAdapter.ts
+      <small>25 functions</small>
     </button>
   </li>
           </ul>
@@ -166,9 +146,9 @@
     <section class="panel">
       <h2>Package overview</h2>
       <div class="summary">
-        <div><strong>19</strong><span class="muted">public exports</span></div>
+        <div><strong>2</strong><span class="muted">public exports</span></div>
         <div><strong>0</strong><span class="muted">components</span></div>
-        <div><strong>9</strong><span class="muted">modules</span></div>
+        <div><strong>4</strong><span class="muted">modules</span></div>
         <div><strong>1</strong><span class="muted">entrypoints</span></div>
       </div>
       <h3>Entrypoints</h3>
@@ -177,79 +157,47 @@
       </ul>
     </section>
     
-    <section class="panel">
-    <h2>Policy findings</h2>
-    <article class="item" data-search="documentation.public-function.description warning Exported function createSupabaseStorageAdapter has no documentation description. src/createSupabaseStorageAdapter.ts">
-          <h3>documentation.public-function.description</h3>
-          <p><strong>warning</strong> — Exported function createSupabaseStorageAdapter has no documentation description.</p>
-          <p class="muted"><code>src/createSupabaseStorageAdapter.ts:47</code></p>
-        </article>
-  </section>
+    <section class="panel"><h2>Policy</h2><p>No documentation findings.</p></section>
     <section class="panel">
       <h2>Modules</h2>
-      <article class="item" data-search="src/contracts/createContractsSupabaseStorageAdapter.ts src/contracts/toMediaStorageAdapter.ts src/createSupabaseStorageAdapter.ts src/types.ts createContractsSupabaseStorageAdapter">
-    <h3>src/contracts/createContractsSupabaseStorageAdapter.ts</h3>
-    <p class="muted">Referenced module</p>
-    <p><strong>Dependencies:</strong> <code>src/contracts/toMediaStorageAdapter.ts</code>, <code>src/createSupabaseStorageAdapter.ts</code>, <code>src/types.ts</code></p>
-    <p><strong>Exports:</strong> <code>createContractsSupabaseStorageAdapter</code></p>
-  </article><article class="item" data-search="src/contracts/index.ts createContractsSupabaseStorageAdapter">
-    <h3>src/contracts/index.ts</h3>
-    <p class="muted">Referenced module</p>
-    <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
-    <p><strong>Exports:</strong> <code>createContractsSupabaseStorageAdapter</code></p>
-  </article><article class="item" data-search="src/contracts/toMediaStorageAdapter.ts src/types.ts toMediaStorageAdapter">
-    <h3>src/contracts/toMediaStorageAdapter.ts</h3>
-    <p class="muted">Referenced module</p>
-    <p><strong>Dependencies:</strong> <code>src/types.ts</code></p>
-    <p><strong>Exports:</strong> <code>toMediaStorageAdapter</code></p>
-  </article><article class="item" data-search="src/createSupabaseStorageAdapter.testSupport.ts CreateClientCall createSupabaseClientStub mockSupabaseModule SupabaseClientStub">
+      <article class="item" data-search="src/createSupabaseStorageAdapter.testSupport.ts CreateClientCall createSupabaseClientStub mockSupabaseModule SupabaseClientStub">
     <h3>src/createSupabaseStorageAdapter.testSupport.ts</h3>
     <p class="muted">Referenced module</p>
     <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
     <p><strong>Exports:</strong> <code>CreateClientCall</code>, <code>createSupabaseClientStub</code>, <code>mockSupabaseModule</code>, <code>SupabaseClientStub</code></p>
-  </article><article class="item" data-search="src/createSupabaseStorageAdapter.ts src/errors.ts src/storageNormalization.ts src/types.ts createSupabaseStorageAdapter">
-    <h3>src/createSupabaseStorageAdapter.ts</h3>
+  </article><article class="item" data-search="src/features/storage/adapters/createSupabaseStorageAdapter.ts src/types/supabaseStorage.ts createSupabaseStorageAdapter">
+    <h3>src/features/storage/adapters/createSupabaseStorageAdapter.ts</h3>
     <p class="muted">Referenced module</p>
-    <p><strong>Dependencies:</strong> <code>src/errors.ts</code>, <code>src/storageNormalization.ts</code>, <code>src/types.ts</code></p>
+    <p><strong>Dependencies:</strong> <code>src/types/supabaseStorage.ts</code></p>
     <p><strong>Exports:</strong> <code>createSupabaseStorageAdapter</code></p>
-  </article><article class="item" data-search="src/errors.ts src/types.ts createStorageError mapNetworkError mapProviderError">
-    <h3>src/errors.ts</h3>
-    <p class="muted">Referenced module</p>
-    <p><strong>Dependencies:</strong> <code>src/types.ts</code></p>
-    <p><strong>Exports:</strong> <code>createStorageError</code>, <code>mapNetworkError</code>, <code>mapProviderError</code></p>
-  </article><article class="item" data-search="src/index.ts AssetMetadata createSupabaseStorageAdapter ListedAssetMetadata ListInput ListResult PublicUrlInput PublicUrlResult RemoveInput RemoveResult SignedUrlInput SignedUrlResult StorageAdapterError StorageAdapterErrorCode StorageResult SupabaseStorageAdapter SupabaseStorageAdapterConfig UploadBody UploadInput UploadResult">
+  </article><article class="item" data-search="src/index.ts createSupabaseStorageAdapter SupabaseStorageAdapterConfig">
     <h3>src/index.ts</h3>
     <p class="muted">Configured entrypoint</p>
     <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
-    <p><strong>Exports:</strong> <code>AssetMetadata</code>, <code>createSupabaseStorageAdapter</code>, <code>ListedAssetMetadata</code>, <code>ListInput</code>, <code>ListResult</code>, <code>PublicUrlInput</code>, <code>PublicUrlResult</code>, <code>RemoveInput</code>, <code>RemoveResult</code>, <code>SignedUrlInput</code>, <code>SignedUrlResult</code>, <code>StorageAdapterError</code>, <code>StorageAdapterErrorCode</code>, <code>StorageResult</code>, <code>SupabaseStorageAdapter</code>, <code>SupabaseStorageAdapterConfig</code>, <code>UploadBody</code>, <code>UploadInput</code>, <code>UploadResult</code></p>
-  </article><article class="item" data-search="src/storageNormalization.ts src/errors.ts src/types.ts extractStorageUrl invalidConfigFallback NormalizedStorageConfig normalizeExpiry normalizeListCursor normalizeListedAsset normalizeListLimit normalizePrefix normalizeStorageConfig resolveStorageBucket resolveStoragePath">
-    <h3>src/storageNormalization.ts</h3>
-    <p class="muted">Referenced module</p>
-    <p><strong>Dependencies:</strong> <code>src/errors.ts</code>, <code>src/types.ts</code></p>
-    <p><strong>Exports:</strong> <code>extractStorageUrl</code>, <code>invalidConfigFallback</code>, <code>NormalizedStorageConfig</code>, <code>normalizeExpiry</code>, <code>normalizeListCursor</code>, <code>normalizeListedAsset</code>, <code>normalizeListLimit</code>, <code>normalizePrefix</code>, <code>normalizeStorageConfig</code>, <code>resolveStorageBucket</code>, <code>resolveStoragePath</code></p>
-  </article><article class="item" data-search="src/types.ts AssetMetadata ListedAssetMetadata ListInput ListResult PublicUrlInput PublicUrlResult RemoveInput RemoveResult SignedUrlInput SignedUrlResult StorageAdapterError StorageAdapterErrorCode StorageResult SupabaseStorageAdapter SupabaseStorageAdapterConfig UploadBody UploadInput UploadResult">
-    <h3>src/types.ts</h3>
+    <p><strong>Exports:</strong> <code>createSupabaseStorageAdapter</code>, <code>SupabaseStorageAdapterConfig</code></p>
+  </article><article class="item" data-search="src/types/supabaseStorage.ts SupabaseStorageAdapterConfig">
+    <h3>src/types/supabaseStorage.ts</h3>
     <p class="muted">Referenced module</p>
     <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
-    <p><strong>Exports:</strong> <code>AssetMetadata</code>, <code>ListedAssetMetadata</code>, <code>ListInput</code>, <code>ListResult</code>, <code>PublicUrlInput</code>, <code>PublicUrlResult</code>, <code>RemoveInput</code>, <code>RemoveResult</code>, <code>SignedUrlInput</code>, <code>SignedUrlResult</code>, <code>StorageAdapterError</code>, <code>StorageAdapterErrorCode</code>, <code>StorageResult</code>, <code>SupabaseStorageAdapter</code>, <code>SupabaseStorageAdapterConfig</code>, <code>UploadBody</code>, <code>UploadInput</code>, <code>UploadResult</code></p>
+    <p><strong>Exports:</strong> <code>SupabaseStorageAdapterConfig</code></p>
   </article>
     </section>
     <section class="panel">
       <h2>Public API</h2>
       
             <section>
-              <h3>src/createSupabaseStorageAdapter.ts</h3>
-              <article class="item" id="symbol-createsupabasestorageadapter" data-search="createSupabaseStorageAdapter  function src/createSupabaseStorageAdapter.ts  SupabaseStorageAdapter SupabaseStorageAdapterConfig (config: SupabaseStorageAdapterConfig) =&gt; SupabaseStorageAdapter">
+              <h3>src/features/storage/adapters/createSupabaseStorageAdapter.ts</h3>
+              <article class="item" id="symbol-createsupabasestorageadapter" data-search="createSupabaseStorageAdapter  function src/features/storage/adapters/createSupabaseStorageAdapter.ts Create the provider-neutral storage port implemented by Supabase Storage. SupabaseStorageAdapterConfig (config: SupabaseStorageAdapterConfig) =&gt; StoragePort">
     <h4>createSupabaseStorageAdapter</h4>
     
-    <p class="muted">function • <code>src/createSupabaseStorageAdapter.ts:47:1</code></p>
-    
+    <p class="muted">function • <code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:28:1</code></p>
+    <p>Create the provider-neutral storage port implemented by Supabase Storage.</p>
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">SupabaseStorageAdapter</li><li class="chip">SupabaseStorageAdapterConfig</li></ul></div>
+    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">SupabaseStorageAdapterConfig</li></ul></div>
     <div>
         <h5>Signature</h5>
-        <pre>(config: SupabaseStorageAdapterConfig) =&gt; SupabaseStorageAdapter</pre>
+        <pre>(config: SupabaseStorageAdapterConfig) =&gt; StoragePort</pre>
         <table>
                 <thead><tr><th>Parameter</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
                 <tbody>
@@ -261,446 +209,18 @@
                       </tr>
                 </tbody>
               </table>
-        <p><strong>Returns:</strong> <code>SupabaseStorageAdapter</code></p>
+        <p><strong>Returns:</strong> <code>StoragePort</code></p>
       </div>
     
   </article>
             </section>
             <section>
-              <h3>src/types.ts</h3>
-              <article class="item" id="symbol-assetmetadata" data-search="AssetMetadata  type src/types.ts ">
-    <h4>AssetMetadata</h4>
-    
-    <p class="muted">type • <code>src/types.ts:52:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>cacheControl</code></td>
-            <td>property</td>
-            <td><code>string | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>contentType</code></td>
-            <td>property</td>
-            <td><code>string | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>path</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>publicUrl</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>size</code></td>
-            <td>property</td>
-            <td><code>number</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-listedassetmetadata" data-search="ListedAssetMetadata  type src/types.ts ">
-    <h4>ListedAssetMetadata</h4>
-    
-    <p class="muted">type • <code>src/types.ts:61:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>contentType</code></td>
-            <td>property</td>
-            <td><code>string | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>createdAt</code></td>
-            <td>property</td>
-            <td><code>string | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>etag</code></td>
-            <td>property</td>
-            <td><code>string | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>path</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>size</code></td>
-            <td>property</td>
-            <td><code>number | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>updatedAt</code></td>
-            <td>property</td>
-            <td><code>string | null</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-listinput" data-search="ListInput  type src/types.ts ">
-    <h4>ListInput</h4>
-    
-    <p class="muted">type • <code>src/types.ts:39:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>cursor</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>limit</code></td>
-            <td>property</td>
-            <td><code>number | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>prefix</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-listresult" data-search="ListResult  type src/types.ts  ListedAssetMetadata">
-    <h4>ListResult</h4>
-    
-    <p class="muted">type • <code>src/types.ts:86:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">ListedAssetMetadata</li></ul></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>assets</code></td>
-            <td>property</td>
-            <td><code>readonly ListedAssetMetadata[]</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>nextCursor</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-publicurlinput" data-search="PublicUrlInput  type src/types.ts ">
-    <h4>PublicUrlInput</h4>
-    
-    <p class="muted">type • <code>src/types.ts:34:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>path</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-publicurlresult" data-search="PublicUrlResult  type src/types.ts  AssetMetadata">
-    <h4>PublicUrlResult</h4>
-    
-    <p class="muted">type • <code>src/types.ts:82:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">AssetMetadata</li></ul></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>asset</code></td>
-            <td>property</td>
-            <td><code>Pick&lt;AssetMetadata, &quot;bucket&quot; | &quot;path&quot; | &quot;publicUrl&quot;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-removeinput" data-search="RemoveInput  type src/types.ts ">
-    <h4>RemoveInput</h4>
-    
-    <p class="muted">type • <code>src/types.ts:29:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>path</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-removeresult" data-search="RemoveResult  type src/types.ts ">
-    <h4>RemoveResult</h4>
-    
-    <p class="muted">type • <code>src/types.ts:75:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>removed</code></td>
-            <td>property</td>
-            <td><code>{ bucket: string; path: string; }</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-signedurlinput" data-search="SignedUrlInput  type src/types.ts ">
-    <h4>SignedUrlInput</h4>
-    
-    <p class="muted">type • <code>src/types.ts:46:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>expiresInSeconds</code></td>
-            <td>property</td>
-            <td><code>number</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>path</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-signedurlresult" data-search="SignedUrlResult  type src/types.ts ">
-    <h4>SignedUrlResult</h4>
-    
-    <p class="muted">type • <code>src/types.ts:91:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>asset</code></td>
-            <td>property</td>
-            <td><code>{ bucket: string; path: string; signedUrl: string; }</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-storageadaptererror" data-search="StorageAdapterError  type src/types.ts  StorageAdapterErrorCode">
-    <h4>StorageAdapterError</h4>
-    
-    <p class="muted">type • <code>src/types.ts:6:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">StorageAdapterErrorCode</li></ul></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>cause</code></td>
-            <td>property</td>
-            <td><code>unknown</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>code</code></td>
-            <td>property</td>
-            <td><code>StorageAdapterErrorCode</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>message</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-storageadaptererrorcode" data-search="StorageAdapterErrorCode  unknown src/types.ts ">
-    <h4>StorageAdapterErrorCode</h4>
-    
-    <p class="muted">unknown • <code>src/types.ts:3:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    
-  </article><article class="item" id="symbol-storageresult" data-search="StorageResult  unknown src/types.ts ">
-    <h4>StorageResult</h4>
-    
-    <p class="muted">unknown • <code>src/types.ts:1:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    
-  </article><article class="item" id="symbol-supabasestorageadapter" data-search="SupabaseStorageAdapter  type src/types.ts  ListInput ListResult PublicUrlInput PublicUrlResult RemoveInput RemoveResult SignedUrlInput SignedUrlResult StorageResult UploadInput UploadResult">
-    <h4>SupabaseStorageAdapter</h4>
-    
-    <p class="muted">type • <code>src/types.ts:99:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">ListInput</li><li class="chip">ListResult</li><li class="chip">PublicUrlInput</li><li class="chip">PublicUrlResult</li><li class="chip">RemoveInput</li><li class="chip">RemoveResult</li><li class="chip">SignedUrlInput</li><li class="chip">SignedUrlResult</li><li class="chip">StorageResult</li><li class="chip">UploadInput</li><li class="chip">UploadResult</li></ul></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>createSignedUrl</code></td>
-            <td>method</td>
-            <td><code>(input: SignedUrlInput) =&gt; Promise&lt;StorageResult&lt;SignedUrlResult&gt;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>getPublicUrl</code></td>
-            <td>method</td>
-            <td><code>(input: PublicUrlInput) =&gt; Promise&lt;StorageResult&lt;PublicUrlResult&gt;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>list</code></td>
-            <td>method</td>
-            <td><code>(input: ListInput) =&gt; Promise&lt;StorageResult&lt;ListResult&gt;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>publicUrl</code></td>
-            <td>method</td>
-            <td><code>(input: PublicUrlInput) =&gt; Promise&lt;StorageResult&lt;PublicUrlResult&gt;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>remove</code></td>
-            <td>method</td>
-            <td><code>(input: RemoveInput) =&gt; Promise&lt;StorageResult&lt;RemoveResult&gt;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>upload</code></td>
-            <td>method</td>
-            <td><code>(input: UploadInput) =&gt; Promise&lt;StorageResult&lt;UploadResult&gt;&gt;</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-supabasestorageadapterconfig" data-search="SupabaseStorageAdapterConfig  type src/types.ts ">
+              <h3>src/types/supabaseStorage.ts</h3>
+              <article class="item" id="symbol-supabasestorageadapterconfig" data-search="SupabaseStorageAdapterConfig  type src/types/supabaseStorage.ts Configure the credentials and optional default bucket for a Supabase storage adapter.">
     <h4>SupabaseStorageAdapterConfig</h4>
     
-    <p class="muted">type • <code>src/types.ts:12:1</code></p>
-    
+    <p class="muted">type • <code>src/types/supabaseStorage.ts:2:1</code></p>
+    <p>Configure the credentials and optional default bucket for a Supabase storage adapter.</p>
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
@@ -729,88 +249,6 @@
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-uploadbody" data-search="UploadBody  unknown src/types.ts ">
-    <h4>UploadBody</h4>
-    
-    <p class="muted">unknown • <code>src/types.ts:18:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
-    
-    
-  </article><article class="item" id="symbol-uploadinput" data-search="UploadInput  type src/types.ts  UploadBody">
-    <h4>UploadInput</h4>
-    
-    <p class="muted">type • <code>src/types.ts:20:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">UploadBody</li></ul></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>body</code></td>
-            <td>property</td>
-            <td><code>UploadBody</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>bucket</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>cacheControl</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>contentType</code></td>
-            <td>property</td>
-            <td><code>string | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr><tr>
-            <td><code>path</code></td>
-            <td>property</td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr><tr>
-            <td><code>upsert</code></td>
-            <td>property</td>
-            <td><code>boolean | undefined</code></td>
-            <td>no</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
-  </article><article class="item" id="symbol-uploadresult" data-search="UploadResult  type src/types.ts  AssetMetadata">
-    <h4>UploadResult</h4>
-    
-    <p class="muted">type • <code>src/types.ts:71:1</code></p>
-    
-    
-    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
-    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">AssetMetadata</li></ul></div>
-    
-    <table>
-    <thead><tr><th>Member</th><th>Kind</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr>
-            <td><code>asset</code></td>
-            <td>property</td>
-            <td><code>AssetMetadata</code></td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-    </tbody>
-  </table>
   </article>
             </section>
     </section>
@@ -824,258 +262,80 @@
     <h3>Architecture overview</h3>
     <p class="muted"><code>diagrams/architecture-overview.mmd</code></p>
     <div class="mermaid">graph TD
-  package__ankhorage_supabase_storage[&quot;@ankhorage/supabase-storage&quot;]
+  package__ankhorage_storage_supabase[&quot;@ankhorage/storage-supabase&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_supabase_storage --&gt; entrypoint_src_index_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts[&quot;src/contracts/createContractsSupabaseStorageAdapter.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_contracts_createContractsSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_createSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_contracts_index_ts[&quot;src/contracts/index.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_contracts_index_ts
-  module_src_contracts_toMediaStorageAdapter_ts[&quot;src/contracts/toMediaStorageAdapter.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_toMediaStorageAdapter_ts --&gt; module_src_types_ts
+  package__ankhorage_storage_supabase --&gt; entrypoint_src_index_ts
   module_src_createSupabaseStorageAdapter_testSupport_ts[&quot;src/createSupabaseStorageAdapter.testSupport.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_createSupabaseStorageAdapter_testSupport_ts
-  module_src_createSupabaseStorageAdapter_ts[&quot;src/createSupabaseStorageAdapter.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_createSupabaseStorageAdapter_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_errors_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_storageNormalization_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_errors_ts[&quot;src/errors.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_errors_ts
-  module_src_errors_ts --&gt; module_src_types_ts
+  package__ankhorage_storage_supabase -.-&gt; module_src_createSupabaseStorageAdapter_testSupport_ts
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts[&quot;src/features/storage/adapters/createSupabaseStorageAdapter.ts&quot;]
+  package__ankhorage_storage_supabase -.-&gt; module_src_features_storage_adapters_createSupabaseStorageAdapter_ts
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --&gt; module_src_types_supabaseStorage_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
-  module_src_storageNormalization_ts[&quot;src/storageNormalization.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_storageNormalization_ts
-  module_src_storageNormalization_ts --&gt; module_src_errors_ts
-  module_src_storageNormalization_ts --&gt; module_src_types_ts
-  module_src_types_ts[&quot;src/types.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_types_ts
+  module_src_types_supabaseStorage_ts[&quot;src/types/supabaseStorage.ts&quot;]
+  package__ankhorage_storage_supabase -.-&gt; module_src_types_supabaseStorage_ts
 </div>
     <details>
       <summary>View Mermaid source</summary>
       <pre>graph TD
-  package__ankhorage_supabase_storage[&quot;@ankhorage/supabase-storage&quot;]
+  package__ankhorage_storage_supabase[&quot;@ankhorage/storage-supabase&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_supabase_storage --&gt; entrypoint_src_index_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts[&quot;src/contracts/createContractsSupabaseStorageAdapter.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_contracts_createContractsSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_createSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_contracts_index_ts[&quot;src/contracts/index.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_contracts_index_ts
-  module_src_contracts_toMediaStorageAdapter_ts[&quot;src/contracts/toMediaStorageAdapter.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_toMediaStorageAdapter_ts --&gt; module_src_types_ts
+  package__ankhorage_storage_supabase --&gt; entrypoint_src_index_ts
   module_src_createSupabaseStorageAdapter_testSupport_ts[&quot;src/createSupabaseStorageAdapter.testSupport.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_createSupabaseStorageAdapter_testSupport_ts
-  module_src_createSupabaseStorageAdapter_ts[&quot;src/createSupabaseStorageAdapter.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_createSupabaseStorageAdapter_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_errors_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_storageNormalization_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_errors_ts[&quot;src/errors.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_errors_ts
-  module_src_errors_ts --&gt; module_src_types_ts
+  package__ankhorage_storage_supabase -.-&gt; module_src_createSupabaseStorageAdapter_testSupport_ts
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts[&quot;src/features/storage/adapters/createSupabaseStorageAdapter.ts&quot;]
+  package__ankhorage_storage_supabase -.-&gt; module_src_features_storage_adapters_createSupabaseStorageAdapter_ts
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --&gt; module_src_types_supabaseStorage_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
-  module_src_storageNormalization_ts[&quot;src/storageNormalization.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_storageNormalization_ts
-  module_src_storageNormalization_ts --&gt; module_src_errors_ts
-  module_src_storageNormalization_ts --&gt; module_src_types_ts
-  module_src_types_ts[&quot;src/types.ts&quot;]
-  package__ankhorage_supabase_storage -.-&gt; module_src_types_ts
+  module_src_types_supabaseStorage_ts[&quot;src/types/supabaseStorage.ts&quot;]
+  package__ankhorage_storage_supabase -.-&gt; module_src_types_supabaseStorage_ts
 </pre>
     </details>
   </article><article class="item" data-search="Module relationships diagrams/module-relationships.mmd">
     <h3>Module relationships</h3>
     <p class="muted"><code>diagrams/module-relationships.mmd</code></p>
     <div class="mermaid">graph LR
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts[&quot;src/contracts/createContractsSupabaseStorageAdapter.ts&quot;]
-  module_src_contracts_index_ts[&quot;src/contracts/index.ts&quot;]
-  module_src_contracts_toMediaStorageAdapter_ts[&quot;src/contracts/toMediaStorageAdapter.ts&quot;]
   module_src_createSupabaseStorageAdapter_testSupport_ts[&quot;src/createSupabaseStorageAdapter.testSupport.ts&quot;]
-  module_src_createSupabaseStorageAdapter_ts[&quot;src/createSupabaseStorageAdapter.ts&quot;]
-  module_src_errors_ts[&quot;src/errors.ts&quot;]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts[&quot;src/features/storage/adapters/createSupabaseStorageAdapter.ts&quot;]
   module_src_index_ts[&quot;src/index.ts&quot;]
-  module_src_storageNormalization_ts[&quot;src/storageNormalization.ts&quot;]
-  module_src_types_ts[&quot;src/types.ts&quot;]
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_createSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_contracts_toMediaStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_errors_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_storageNormalization_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_errors_ts --&gt; module_src_types_ts
-  module_src_storageNormalization_ts --&gt; module_src_errors_ts
-  module_src_storageNormalization_ts --&gt; module_src_types_ts
+  module_src_types_supabaseStorage_ts[&quot;src/types/supabaseStorage.ts&quot;]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --&gt; module_src_types_supabaseStorage_ts
 </div>
     <details>
       <summary>View Mermaid source</summary>
       <pre>graph LR
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts[&quot;src/contracts/createContractsSupabaseStorageAdapter.ts&quot;]
-  module_src_contracts_index_ts[&quot;src/contracts/index.ts&quot;]
-  module_src_contracts_toMediaStorageAdapter_ts[&quot;src/contracts/toMediaStorageAdapter.ts&quot;]
   module_src_createSupabaseStorageAdapter_testSupport_ts[&quot;src/createSupabaseStorageAdapter.testSupport.ts&quot;]
-  module_src_createSupabaseStorageAdapter_ts[&quot;src/createSupabaseStorageAdapter.ts&quot;]
-  module_src_errors_ts[&quot;src/errors.ts&quot;]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts[&quot;src/features/storage/adapters/createSupabaseStorageAdapter.ts&quot;]
   module_src_index_ts[&quot;src/index.ts&quot;]
-  module_src_storageNormalization_ts[&quot;src/storageNormalization.ts&quot;]
-  module_src_types_ts[&quot;src/types.ts&quot;]
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_createSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_contracts_toMediaStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_errors_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_storageNormalization_ts
-  module_src_createSupabaseStorageAdapter_ts --&gt; module_src_types_ts
-  module_src_errors_ts --&gt; module_src_types_ts
-  module_src_storageNormalization_ts --&gt; module_src_errors_ts
-  module_src_storageNormalization_ts --&gt; module_src_types_ts
+  module_src_types_supabaseStorage_ts[&quot;src/types/supabaseStorage.ts&quot;]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --&gt; module_src_types_supabaseStorage_ts
 </pre>
     </details>
   </article><article class="item" data-search="Export graph diagrams/export-graph.mmd">
     <h3>Export graph</h3>
     <p class="muted"><code>diagrams/export-graph.mmd</code></p>
     <div class="mermaid">graph LR
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts[&quot;src/contracts/createContractsSupabaseStorageAdapter.ts&quot;]
-  module_src_contracts_index_ts[&quot;src/contracts/index.ts&quot;]
-  module_src_contracts_toMediaStorageAdapter_ts[&quot;src/contracts/toMediaStorageAdapter.ts&quot;]
   module_src_createSupabaseStorageAdapter_testSupport_ts[&quot;src/createSupabaseStorageAdapter.testSupport.ts&quot;]
-  module_src_createSupabaseStorageAdapter_ts[&quot;src/createSupabaseStorageAdapter.ts&quot;]
-  module_src_errors_ts[&quot;src/errors.ts&quot;]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts[&quot;src/features/storage/adapters/createSupabaseStorageAdapter.ts&quot;]
   module_src_index_ts[&quot;src/index.ts&quot;]
-  module_src_storageNormalization_ts[&quot;src/storageNormalization.ts&quot;]
-  module_src_types_ts[&quot;src/types.ts&quot;]
-  export_AssetMetadata[&quot;AssetMetadata&quot;]
-  module_src_types_ts --&gt; export_AssetMetadata
+  module_src_types_supabaseStorage_ts[&quot;src/types/supabaseStorage.ts&quot;]
   export_createSupabaseStorageAdapter[&quot;createSupabaseStorageAdapter&quot;]
-  module_src_createSupabaseStorageAdapter_ts --&gt; export_createSupabaseStorageAdapter
-  export_createSupabaseStorageAdapter -.-&gt; export_SupabaseStorageAdapter
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --&gt; export_createSupabaseStorageAdapter
   export_createSupabaseStorageAdapter -.-&gt; export_SupabaseStorageAdapterConfig
-  export_ListedAssetMetadata[&quot;ListedAssetMetadata&quot;]
-  module_src_types_ts --&gt; export_ListedAssetMetadata
-  export_ListInput[&quot;ListInput&quot;]
-  module_src_types_ts --&gt; export_ListInput
-  export_ListResult[&quot;ListResult&quot;]
-  module_src_types_ts --&gt; export_ListResult
-  export_ListResult -.-&gt; export_ListedAssetMetadata
-  export_PublicUrlInput[&quot;PublicUrlInput&quot;]
-  module_src_types_ts --&gt; export_PublicUrlInput
-  export_PublicUrlResult[&quot;PublicUrlResult&quot;]
-  module_src_types_ts --&gt; export_PublicUrlResult
-  export_PublicUrlResult -.-&gt; export_AssetMetadata
-  export_RemoveInput[&quot;RemoveInput&quot;]
-  module_src_types_ts --&gt; export_RemoveInput
-  export_RemoveResult[&quot;RemoveResult&quot;]
-  module_src_types_ts --&gt; export_RemoveResult
-  export_SignedUrlInput[&quot;SignedUrlInput&quot;]
-  module_src_types_ts --&gt; export_SignedUrlInput
-  export_SignedUrlResult[&quot;SignedUrlResult&quot;]
-  module_src_types_ts --&gt; export_SignedUrlResult
-  export_StorageAdapterError[&quot;StorageAdapterError&quot;]
-  module_src_types_ts --&gt; export_StorageAdapterError
-  export_StorageAdapterError -.-&gt; export_StorageAdapterErrorCode
-  export_StorageAdapterErrorCode[&quot;StorageAdapterErrorCode&quot;]
-  module_src_types_ts --&gt; export_StorageAdapterErrorCode
-  export_StorageResult[&quot;StorageResult&quot;]
-  module_src_types_ts --&gt; export_StorageResult
-  export_SupabaseStorageAdapter[&quot;SupabaseStorageAdapter&quot;]
-  module_src_types_ts --&gt; export_SupabaseStorageAdapter
-  export_SupabaseStorageAdapter -.-&gt; export_ListInput
-  export_SupabaseStorageAdapter -.-&gt; export_ListResult
-  export_SupabaseStorageAdapter -.-&gt; export_PublicUrlInput
-  export_SupabaseStorageAdapter -.-&gt; export_PublicUrlResult
-  export_SupabaseStorageAdapter -.-&gt; export_RemoveInput
-  export_SupabaseStorageAdapter -.-&gt; export_RemoveResult
-  export_SupabaseStorageAdapter -.-&gt; export_SignedUrlInput
-  export_SupabaseStorageAdapter -.-&gt; export_SignedUrlResult
-  export_SupabaseStorageAdapter -.-&gt; export_StorageResult
-  export_SupabaseStorageAdapter -.-&gt; export_UploadInput
-  export_SupabaseStorageAdapter -.-&gt; export_UploadResult
   export_SupabaseStorageAdapterConfig[&quot;SupabaseStorageAdapterConfig&quot;]
-  module_src_types_ts --&gt; export_SupabaseStorageAdapterConfig
-  export_UploadBody[&quot;UploadBody&quot;]
-  module_src_types_ts --&gt; export_UploadBody
-  export_UploadInput[&quot;UploadInput&quot;]
-  module_src_types_ts --&gt; export_UploadInput
-  export_UploadInput -.-&gt; export_UploadBody
-  export_UploadResult[&quot;UploadResult&quot;]
-  module_src_types_ts --&gt; export_UploadResult
-  export_UploadResult -.-&gt; export_AssetMetadata
+  module_src_types_supabaseStorage_ts --&gt; export_SupabaseStorageAdapterConfig
 </div>
     <details>
       <summary>View Mermaid source</summary>
       <pre>graph LR
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts[&quot;src/contracts/createContractsSupabaseStorageAdapter.ts&quot;]
-  module_src_contracts_index_ts[&quot;src/contracts/index.ts&quot;]
-  module_src_contracts_toMediaStorageAdapter_ts[&quot;src/contracts/toMediaStorageAdapter.ts&quot;]
   module_src_createSupabaseStorageAdapter_testSupport_ts[&quot;src/createSupabaseStorageAdapter.testSupport.ts&quot;]
-  module_src_createSupabaseStorageAdapter_ts[&quot;src/createSupabaseStorageAdapter.ts&quot;]
-  module_src_errors_ts[&quot;src/errors.ts&quot;]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts[&quot;src/features/storage/adapters/createSupabaseStorageAdapter.ts&quot;]
   module_src_index_ts[&quot;src/index.ts&quot;]
-  module_src_storageNormalization_ts[&quot;src/storageNormalization.ts&quot;]
-  module_src_types_ts[&quot;src/types.ts&quot;]
-  export_AssetMetadata[&quot;AssetMetadata&quot;]
-  module_src_types_ts --&gt; export_AssetMetadata
+  module_src_types_supabaseStorage_ts[&quot;src/types/supabaseStorage.ts&quot;]
   export_createSupabaseStorageAdapter[&quot;createSupabaseStorageAdapter&quot;]
-  module_src_createSupabaseStorageAdapter_ts --&gt; export_createSupabaseStorageAdapter
-  export_createSupabaseStorageAdapter -.-&gt; export_SupabaseStorageAdapter
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --&gt; export_createSupabaseStorageAdapter
   export_createSupabaseStorageAdapter -.-&gt; export_SupabaseStorageAdapterConfig
-  export_ListedAssetMetadata[&quot;ListedAssetMetadata&quot;]
-  module_src_types_ts --&gt; export_ListedAssetMetadata
-  export_ListInput[&quot;ListInput&quot;]
-  module_src_types_ts --&gt; export_ListInput
-  export_ListResult[&quot;ListResult&quot;]
-  module_src_types_ts --&gt; export_ListResult
-  export_ListResult -.-&gt; export_ListedAssetMetadata
-  export_PublicUrlInput[&quot;PublicUrlInput&quot;]
-  module_src_types_ts --&gt; export_PublicUrlInput
-  export_PublicUrlResult[&quot;PublicUrlResult&quot;]
-  module_src_types_ts --&gt; export_PublicUrlResult
-  export_PublicUrlResult -.-&gt; export_AssetMetadata
-  export_RemoveInput[&quot;RemoveInput&quot;]
-  module_src_types_ts --&gt; export_RemoveInput
-  export_RemoveResult[&quot;RemoveResult&quot;]
-  module_src_types_ts --&gt; export_RemoveResult
-  export_SignedUrlInput[&quot;SignedUrlInput&quot;]
-  module_src_types_ts --&gt; export_SignedUrlInput
-  export_SignedUrlResult[&quot;SignedUrlResult&quot;]
-  module_src_types_ts --&gt; export_SignedUrlResult
-  export_StorageAdapterError[&quot;StorageAdapterError&quot;]
-  module_src_types_ts --&gt; export_StorageAdapterError
-  export_StorageAdapterError -.-&gt; export_StorageAdapterErrorCode
-  export_StorageAdapterErrorCode[&quot;StorageAdapterErrorCode&quot;]
-  module_src_types_ts --&gt; export_StorageAdapterErrorCode
-  export_StorageResult[&quot;StorageResult&quot;]
-  module_src_types_ts --&gt; export_StorageResult
-  export_SupabaseStorageAdapter[&quot;SupabaseStorageAdapter&quot;]
-  module_src_types_ts --&gt; export_SupabaseStorageAdapter
-  export_SupabaseStorageAdapter -.-&gt; export_ListInput
-  export_SupabaseStorageAdapter -.-&gt; export_ListResult
-  export_SupabaseStorageAdapter -.-&gt; export_PublicUrlInput
-  export_SupabaseStorageAdapter -.-&gt; export_PublicUrlResult
-  export_SupabaseStorageAdapter -.-&gt; export_RemoveInput
-  export_SupabaseStorageAdapter -.-&gt; export_RemoveResult
-  export_SupabaseStorageAdapter -.-&gt; export_SignedUrlInput
-  export_SupabaseStorageAdapter -.-&gt; export_SignedUrlResult
-  export_SupabaseStorageAdapter -.-&gt; export_StorageResult
-  export_SupabaseStorageAdapter -.-&gt; export_UploadInput
-  export_SupabaseStorageAdapter -.-&gt; export_UploadResult
   export_SupabaseStorageAdapterConfig[&quot;SupabaseStorageAdapterConfig&quot;]
-  module_src_types_ts --&gt; export_SupabaseStorageAdapterConfig
-  export_UploadBody[&quot;UploadBody&quot;]
-  module_src_types_ts --&gt; export_UploadBody
-  export_UploadInput[&quot;UploadInput&quot;]
-  module_src_types_ts --&gt; export_UploadInput
-  export_UploadInput -.-&gt; export_UploadBody
-  export_UploadResult[&quot;UploadResult&quot;]
-  module_src_types_ts --&gt; export_UploadResult
-  export_UploadResult -.-&gt; export_AssetMetadata
+  module_src_types_supabaseStorage_ts --&gt; export_SupabaseStorageAdapterConfig
 </pre>
     </details>
   </article><article class="item" data-search="createSupabaseStorageAdapter sequence diagrams/sequences/create-supabase-storage-adapter.mmd">
@@ -1083,97 +343,41 @@
     <p class="muted"><code>diagrams/sequences/create-supabase-storage-adapter.mmd</code></p>
     <div class="mermaid">sequenceDiagram
   participant participant_createClient as createClient
-  participant participant_createStorageContext as createStorageContext
-  participant participant_createStorageError as createStorageError
-  participant participant_createSupabaseClient as createSupabaseClient
+  participant participant_createContext as createContext
   participant participant_createSupabaseStorageAdapter as createSupabaseStorageAdapter
-  participant participant_normalizeStorageConfig as normalizeStorageConfig
-  participant_createSupabaseStorageAdapter-&gt;&gt;participant_createStorageContext: createStorageContext()
-  participant_createStorageContext-&gt;&gt;participant_normalizeStorageConfig: normalizeStorageConfig()
-  participant_normalizeStorageConfig-&gt;&gt;participant_createStorageError: createStorageError()
-  participant_createStorageError--&gt;&gt;participant_normalizeStorageConfig: return
-  participant_normalizeStorageConfig--&gt;&gt;participant_createStorageContext: return
-  participant_createStorageContext-&gt;&gt;participant_createSupabaseClient: createSupabaseClient()
-  participant_createSupabaseClient-&gt;&gt;participant_createClient: createClient()
-  participant_createClient--&gt;&gt;participant_createSupabaseClient: return
-  participant_createSupabaseClient--&gt;&gt;participant_createStorageContext: return
-  participant_createStorageContext--&gt;&gt;participant_createSupabaseStorageAdapter: return
+  participant participant_error as error
+  participant participant_normalizeConfig as normalizeConfig
+  participant_createSupabaseStorageAdapter-&gt;&gt;participant_createContext: createContext()
+  participant_createContext-&gt;&gt;participant_normalizeConfig: normalizeConfig()
+  participant_normalizeConfig-&gt;&gt;participant_error: error()
+  participant_error--&gt;&gt;participant_normalizeConfig: return
+  participant_normalizeConfig--&gt;&gt;participant_createContext: return
+  participant_createContext-&gt;&gt;participant_createClient: createClient()
+  participant_createClient--&gt;&gt;participant_createContext: return
+  participant_createContext--&gt;&gt;participant_createSupabaseStorageAdapter: return
 </div>
     <details>
       <summary>View Mermaid source</summary>
       <pre>sequenceDiagram
   participant participant_createClient as createClient
-  participant participant_createStorageContext as createStorageContext
-  participant participant_createStorageError as createStorageError
-  participant participant_createSupabaseClient as createSupabaseClient
+  participant participant_createContext as createContext
   participant participant_createSupabaseStorageAdapter as createSupabaseStorageAdapter
-  participant participant_normalizeStorageConfig as normalizeStorageConfig
-  participant_createSupabaseStorageAdapter-&gt;&gt;participant_createStorageContext: createStorageContext()
-  participant_createStorageContext-&gt;&gt;participant_normalizeStorageConfig: normalizeStorageConfig()
-  participant_normalizeStorageConfig-&gt;&gt;participant_createStorageError: createStorageError()
-  participant_createStorageError--&gt;&gt;participant_normalizeStorageConfig: return
-  participant_normalizeStorageConfig--&gt;&gt;participant_createStorageContext: return
-  participant_createStorageContext-&gt;&gt;participant_createSupabaseClient: createSupabaseClient()
-  participant_createSupabaseClient-&gt;&gt;participant_createClient: createClient()
-  participant_createClient--&gt;&gt;participant_createSupabaseClient: return
-  participant_createSupabaseClient--&gt;&gt;participant_createStorageContext: return
-  participant_createStorageContext--&gt;&gt;participant_createSupabaseStorageAdapter: return
+  participant participant_error as error
+  participant participant_normalizeConfig as normalizeConfig
+  participant_createSupabaseStorageAdapter-&gt;&gt;participant_createContext: createContext()
+  participant_createContext-&gt;&gt;participant_normalizeConfig: normalizeConfig()
+  participant_normalizeConfig-&gt;&gt;participant_error: error()
+  participant_error--&gt;&gt;participant_normalizeConfig: return
+  participant_normalizeConfig--&gt;&gt;participant_createContext: return
+  participant_createContext-&gt;&gt;participant_createClient: createClient()
+  participant_createClient--&gt;&gt;participant_createContext: return
+  participant_createContext--&gt;&gt;participant_createSupabaseStorageAdapter: return
 </pre>
     </details>
   </article>
     </section>
         </section>
-        <section id="view-src-contracts-createcontractssupabasestorageadapter-ts" class="view" data-view="src/contracts/createContractsSupabaseStorageAdapter.ts" hidden>
-    <section class="panel">
-      <h2>src/contracts/createContractsSupabaseStorageAdapter.ts</h2>
-      <article class="item" data-search="createContractsSupabaseStorageAdapter src/contracts/createContractsSupabaseStorageAdapter.ts ">
-    <h3>createContractsSupabaseStorageAdapter</h3>
-    <p class="muted"><code>src/contracts/createContractsSupabaseStorageAdapter.ts:7:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article>
-    </section>
-  </section><section id="view-src-contracts-tomediastorageadapter-ts" class="view" data-view="src/contracts/toMediaStorageAdapter.ts" hidden>
-    <section class="panel">
-      <h2>src/contracts/toMediaStorageAdapter.ts</h2>
-      <article class="item" data-search="toMediaStorageAdapter src/contracts/toMediaStorageAdapter.ts ">
-    <h3>toMediaStorageAdapter</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:16:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="listMedia src/contracts/toMediaStorageAdapter.ts ">
-    <h3>listMedia</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:29:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="removeMedia src/contracts/toMediaStorageAdapter.ts ">
-    <h3>removeMedia</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:49:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="resolveMedia src/contracts/toMediaStorageAdapter.ts ">
-    <h3>resolveMedia</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:54:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="resolvePublicMedia src/contracts/toMediaStorageAdapter.ts ">
-    <h3>resolvePublicMedia</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:80:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="toStorageObjectMetadata src/contracts/toMediaStorageAdapter.ts ">
-    <h3>toStorageObjectMetadata</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:100:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="uploadMedia src/contracts/toMediaStorageAdapter.ts ">
-    <h3>uploadMedia</h3>
-    <p class="muted"><code>src/contracts/toMediaStorageAdapter.ts:113:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article>
-    </section>
-  </section><section id="view-src-createsupabasestorageadapter-testsupport-ts" class="view" data-view="src/createSupabaseStorageAdapter.testSupport.ts" hidden>
+        <section id="view-src-createsupabasestorageadapter-testsupport-ts" class="view" data-view="src/createSupabaseStorageAdapter.testSupport.ts" hidden>
     <section class="panel">
       <h2>src/createSupabaseStorageAdapter.testSupport.ts</h2>
       <article class="item" data-search="createSupabaseClientStub src/createSupabaseStorageAdapter.testSupport.ts ">
@@ -1188,168 +392,133 @@
     
   </article>
     </section>
-  </section><section id="view-src-createsupabasestorageadapter-ts" class="view" data-view="src/createSupabaseStorageAdapter.ts" hidden>
+  </section><section id="view-src-features-storage-adapters-createsupabasestorageadapter-ts" class="view" data-view="src/features/storage/adapters/createSupabaseStorageAdapter.ts" hidden>
     <section class="panel">
-      <h2>src/createSupabaseStorageAdapter.ts</h2>
-      <article class="item" data-search="createSupabaseStorageAdapter src/createSupabaseStorageAdapter.ts ">
+      <h2>src/features/storage/adapters/createSupabaseStorageAdapter.ts</h2>
+      <article class="item" data-search="createSupabaseStorageAdapter src/features/storage/adapters/createSupabaseStorageAdapter.ts Create the provider-neutral storage port implemented by Supabase Storage.">
     <h3>createSupabaseStorageAdapter</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:47:1</code></p>
-    <p class="empty">No description available.</p>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:28:1</code></p>
+    <p>Create the provider-neutral storage port implemented by Supabase Storage.</p>
     
-  </article><article class="item" data-search="createSignedAssetUrl src/createSupabaseStorageAdapter.ts ">
-    <h3>createSignedAssetUrl</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:61:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="createContext src/features/storage/adapters/createSupabaseStorageAdapter.ts Create a provider client only after validating its private configuration.">
+    <h3>createContext</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:39:1</code></p>
+    <p>Create a provider client only after validating its private configuration.</p>
     
-  </article><article class="item" data-search="createStorageContext src/createSupabaseStorageAdapter.ts ">
-    <h3>createStorageContext</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:90:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="upload src/features/storage/adapters/createSupabaseStorageAdapter.ts Upload one object through the canonical storage upload operation.">
+    <h3>upload</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:53:1</code></p>
+    <p>Upload one object through the canonical storage upload operation.</p>
     
-  </article><article class="item" data-search="createSupabaseClient src/createSupabaseStorageAdapter.ts ">
-    <h3>createSupabaseClient</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:102:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="remove src/features/storage/adapters/createSupabaseStorageAdapter.ts Remove one object through the canonical storage remove operation.">
+    <h3>remove</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:84:1</code></p>
+    <p>Remove one object through the canonical storage remove operation.</p>
     
-  </article><article class="item" data-search="resolveStorageContext src/createSupabaseStorageAdapter.ts ">
-    <h3>resolveStorageContext</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:108:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="list src/features/storage/adapters/createSupabaseStorageAdapter.ts List object metadata through the canonical storage list operation.">
+    <h3>list</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:103:1</code></p>
+    <p>List object metadata through the canonical storage list operation.</p>
     
-  </article><article class="item" data-search="getPublicUrl src/createSupabaseStorageAdapter.ts ">
+  </article><article class="item" data-search="resolve src/features/storage/adapters/createSupabaseStorageAdapter.ts Resolve one object as a public URL or an expiring signed URL.">
+    <h3>resolve</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:134:1</code></p>
+    <p>Resolve one object as a public URL or an expiring signed URL.</p>
+    
+  </article><article class="item" data-search="getPublicUrl src/features/storage/adapters/createSupabaseStorageAdapter.ts Obtain Supabase&#39;s synchronous public URL response for a stable object identity.">
     <h3>getPublicUrl</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:118:1</code></p>
-    <p class="empty">No description available.</p>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:176:1</code></p>
+    <p>Obtain Supabase&#39;s synchronous public URL response for a stable object identity.</p>
     
-  </article><article class="item" data-search="invalidUrlResponse src/createSupabaseStorageAdapter.ts ">
-    <h3>invalidUrlResponse</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:141:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="readyContext src/features/storage/adapters/createSupabaseStorageAdapter.ts Return the validated Supabase client or its previously recorded configuration failure.">
+    <h3>readyContext</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:193:1</code></p>
+    <p>Return the validated Supabase client or its previously recorded configuration failure.</p>
     
-  </article><article class="item" data-search="invalidUrlResponse src/createSupabaseStorageAdapter.ts ">
-    <h3>invalidUrlResponse</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:142:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="normalizeConfig src/features/storage/adapters/createSupabaseStorageAdapter.ts Validate Supabase credentials and normalize its endpoint once.">
+    <h3>normalizeConfig</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:202:1</code></p>
+    <p>Validate Supabase credentials and normalize its endpoint once.</p>
     
-  </article><article class="item" data-search="invalidUrlResponse src/createSupabaseStorageAdapter.ts ">
-    <h3>invalidUrlResponse</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:143:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="resolveBucket src/features/storage/adapters/createSupabaseStorageAdapter.ts Require an input bucket or use the adapter&#39;s configured default bucket.">
+    <h3>resolveBucket</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:218:1</code></p>
+    <p>Require an input bucket or use the adapter&#39;s configured default bucket.</p>
     
-  </article><article class="item" data-search="listAssets src/createSupabaseStorageAdapter.ts ">
-    <h3>listAssets</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:155:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="resolvePath src/features/storage/adapters/createSupabaseStorageAdapter.ts Normalize a non-empty object path for the Supabase API.">
+    <h3>resolvePath</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:226:1</code></p>
+    <p>Normalize a non-empty object path for the Supabase API.</p>
     
-  </article><article class="item" data-search="removeAsset src/createSupabaseStorageAdapter.ts ">
-    <h3>removeAsset</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:185:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="uploadAsset src/createSupabaseStorageAdapter.ts ">
-    <h3>uploadAsset</h3>
-    <p class="muted"><code>src/createSupabaseStorageAdapter.ts:204:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article>
-    </section>
-  </section><section id="view-src-errors-ts" class="view" data-view="src/errors.ts" hidden>
-    <section class="panel">
-      <h2>src/errors.ts</h2>
-      <article class="item" data-search="createStorageError src/errors.ts ">
-    <h3>createStorageError</h3>
-    <p class="muted"><code>src/errors.ts:3:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="mapNetworkError src/errors.ts ">
-    <h3>mapNetworkError</h3>
-    <p class="muted"><code>src/errors.ts:11:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="mapProviderError src/errors.ts ">
-    <h3>mapProviderError</h3>
-    <p class="muted"><code>src/errors.ts:15:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="extractErrorMessage src/errors.ts ">
-    <h3>extractErrorMessage</h3>
-    <p class="muted"><code>src/errors.ts:20:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="isRecord src/errors.ts ">
-    <h3>isRecord</h3>
-    <p class="muted"><code>src/errors.ts:48:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article>
-    </section>
-  </section><section id="view-src-storagenormalization-ts" class="view" data-view="src/storageNormalization.ts" hidden>
-    <section class="panel">
-      <h2>src/storageNormalization.ts</h2>
-      <article class="item" data-search="extractStorageUrl src/storageNormalization.ts ">
-    <h3>extractStorageUrl</h3>
-    <p class="muted"><code>src/storageNormalization.ts:12:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="invalidConfigFallback src/storageNormalization.ts ">
-    <h3>invalidConfigFallback</h3>
-    <p class="muted"><code>src/storageNormalization.ts:25:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="normalizeExpiry src/storageNormalization.ts ">
+  </article><article class="item" data-search="normalizeExpiry src/features/storage/adapters/createSupabaseStorageAdapter.ts Validate a signed URL duration in seconds.">
     <h3>normalizeExpiry</h3>
-    <p class="muted"><code>src/storageNormalization.ts:29:1</code></p>
-    <p class="empty">No description available.</p>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:234:1</code></p>
+    <p>Validate a signed URL duration in seconds.</p>
     
-  </article><article class="item" data-search="normalizeListCursor src/storageNormalization.ts ">
-    <h3>normalizeListCursor</h3>
-    <p class="muted"><code>src/storageNormalization.ts:41:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="normalizeLimit src/features/storage/adapters/createSupabaseStorageAdapter.ts Normalize a list page size.">
+    <h3>normalizeLimit</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:241:1</code></p>
+    <p>Normalize a list page size.</p>
     
-  </article><article class="item" data-search="normalizeListLimit src/storageNormalization.ts ">
-    <h3>normalizeListLimit</h3>
-    <p class="muted"><code>src/storageNormalization.ts:52:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="normalizeCursor src/features/storage/adapters/createSupabaseStorageAdapter.ts Decode the opaque offset cursor used by this Supabase adapter.">
+    <h3>normalizeCursor</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:249:1</code></p>
+    <p>Decode the opaque offset cursor used by this Supabase adapter.</p>
     
-  </article><article class="item" data-search="normalizeListedAsset src/storageNormalization.ts ">
-    <h3>normalizeListedAsset</h3>
-    <p class="muted"><code>src/storageNormalization.ts:65:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="metadata src/features/storage/adapters/createSupabaseStorageAdapter.ts Map Supabase list rows to the shared storage metadata contract.">
+    <h3>metadata</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:258:1</code></p>
+    <p>Map Supabase list rows to the shared storage metadata contract.</p>
     
-  </article><article class="item" data-search="normalizePrefix src/storageNormalization.ts ">
-    <h3>normalizePrefix</h3>
-    <p class="muted"><code>src/storageNormalization.ts:85:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="identity src/features/storage/adapters/createSupabaseStorageAdapter.ts Preserve the caller&#39;s provider-neutral storage identity.">
+    <h3>identity</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:278:1</code></p>
+    <p>Preserve the caller&#39;s provider-neutral storage identity.</p>
     
-  </article><article class="item" data-search="normalizeStorageConfig src/storageNormalization.ts ">
-    <h3>normalizeStorageConfig</h3>
-    <p class="muted"><code>src/storageNormalization.ts:89:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="readUrl src/features/storage/adapters/createSupabaseStorageAdapter.ts Read a non-empty URL from Supabase&#39;s response payload.">
+    <h3>readUrl</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:283:1</code></p>
+    <p>Read a non-empty URL from Supabase&#39;s response payload.</p>
     
-  </article><article class="item" data-search="resolveStorageBucket src/storageNormalization.ts ">
-    <h3>resolveStorageBucket</h3>
-    <p class="muted"><code>src/storageNormalization.ts:126:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="readUrlCandidate src/features/storage/adapters/createSupabaseStorageAdapter.ts Read one supported URL field without accepting arbitrary provider properties.">
+    <h3>readUrlCandidate</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:296:1</code></p>
+    <p>Read one supported URL field without accepting arbitrary provider properties.</p>
     
-  </article><article class="item" data-search="resolveStoragePath src/storageNormalization.ts ">
-    <h3>resolveStoragePath</h3>
-    <p class="muted"><code>src/storageNormalization.ts:139:1</code></p>
-    <p class="empty">No description available.</p>
+  </article><article class="item" data-search="providerError src/features/storage/adapters/createSupabaseStorageAdapter.ts Translate a Supabase provider error into the portable storage result shape.">
+    <h3>providerError</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:304:1</code></p>
+    <p>Translate a Supabase provider error into the portable storage result shape.</p>
     
-  </article><article class="item" data-search="isRecord src/storageNormalization.ts ">
+  </article><article class="item" data-search="networkError src/features/storage/adapters/createSupabaseStorageAdapter.ts Preserve provider transport failures as portable storage errors.">
+    <h3>networkError</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:316:1</code></p>
+    <p>Preserve provider transport failures as portable storage errors.</p>
+    
+  </article><article class="item" data-search="error src/features/storage/adapters/createSupabaseStorageAdapter.ts Construct one portable storage failure.">
+    <h3>error</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:321:1</code></p>
+    <p>Construct one portable storage failure.</p>
+    
+  </article><article class="item" data-search="providerMessage src/features/storage/adapters/createSupabaseStorageAdapter.ts Extract a readable message from Supabase errors.">
+    <h3>providerMessage</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:328:1</code></p>
+    <p>Extract a readable message from Supabase errors.</p>
+    
+  </article><article class="item" data-search="isRecord src/features/storage/adapters/createSupabaseStorageAdapter.ts Narrow unknown values to property records.">
     <h3>isRecord</h3>
-    <p class="muted"><code>src/storageNormalization.ts:149:1</code></p>
-    <p class="empty">No description available.</p>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:343:1</code></p>
+    <p>Narrow unknown values to property records.</p>
     
-  </article><article class="item" data-search="readNumber src/storageNormalization.ts ">
-    <h3>readNumber</h3>
-    <p class="muted"><code>src/storageNormalization.ts:153:1</code></p>
-    <p class="empty">No description available.</p>
-    
-  </article><article class="item" data-search="readString src/storageNormalization.ts ">
+  </article><article class="item" data-search="readString src/features/storage/adapters/createSupabaseStorageAdapter.ts Read an optional non-empty metadata string.">
     <h3>readString</h3>
-    <p class="muted"><code>src/storageNormalization.ts:157:1</code></p>
-    <p class="empty">No description available.</p>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:348:1</code></p>
+    <p>Read an optional non-empty metadata string.</p>
+    
+  </article><article class="item" data-search="readNumber src/features/storage/adapters/createSupabaseStorageAdapter.ts Read an optional finite metadata number.">
+    <h3>readNumber</h3>
+    <p class="muted"><code>src/features/storage/adapters/createSupabaseStorageAdapter.ts:353:1</code></p>
+    <p>Read an optional finite metadata number.</p>
     
   </article>
     </section>

@@ -1,20 +1,6 @@
 graph LR
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts["src/contracts/createContractsSupabaseStorageAdapter.ts"]
-  module_src_contracts_index_ts["src/contracts/index.ts"]
-  module_src_contracts_toMediaStorageAdapter_ts["src/contracts/toMediaStorageAdapter.ts"]
   module_src_createSupabaseStorageAdapter_testSupport_ts["src/createSupabaseStorageAdapter.testSupport.ts"]
-  module_src_createSupabaseStorageAdapter_ts["src/createSupabaseStorageAdapter.ts"]
-  module_src_errors_ts["src/errors.ts"]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts["src/features/storage/adapters/createSupabaseStorageAdapter.ts"]
   module_src_index_ts["src/index.ts"]
-  module_src_storageNormalization_ts["src/storageNormalization.ts"]
-  module_src_types_ts["src/types.ts"]
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --> module_src_contracts_toMediaStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --> module_src_createSupabaseStorageAdapter_ts
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts --> module_src_types_ts
-  module_src_contracts_toMediaStorageAdapter_ts --> module_src_types_ts
-  module_src_createSupabaseStorageAdapter_ts --> module_src_errors_ts
-  module_src_createSupabaseStorageAdapter_ts --> module_src_storageNormalization_ts
-  module_src_createSupabaseStorageAdapter_ts --> module_src_types_ts
-  module_src_errors_ts --> module_src_types_ts
-  module_src_storageNormalization_ts --> module_src_errors_ts
-  module_src_storageNormalization_ts --> module_src_types_ts
+  module_src_types_supabaseStorage_ts["src/types/supabaseStorage.ts"]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --> module_src_types_supabaseStorage_ts

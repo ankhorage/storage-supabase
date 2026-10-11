@@ -1,66 +1,10 @@
 graph LR
-  module_src_contracts_createContractsSupabaseStorageAdapter_ts["src/contracts/createContractsSupabaseStorageAdapter.ts"]
-  module_src_contracts_index_ts["src/contracts/index.ts"]
-  module_src_contracts_toMediaStorageAdapter_ts["src/contracts/toMediaStorageAdapter.ts"]
   module_src_createSupabaseStorageAdapter_testSupport_ts["src/createSupabaseStorageAdapter.testSupport.ts"]
-  module_src_createSupabaseStorageAdapter_ts["src/createSupabaseStorageAdapter.ts"]
-  module_src_errors_ts["src/errors.ts"]
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts["src/features/storage/adapters/createSupabaseStorageAdapter.ts"]
   module_src_index_ts["src/index.ts"]
-  module_src_storageNormalization_ts["src/storageNormalization.ts"]
-  module_src_types_ts["src/types.ts"]
-  export_AssetMetadata["AssetMetadata"]
-  module_src_types_ts --> export_AssetMetadata
+  module_src_types_supabaseStorage_ts["src/types/supabaseStorage.ts"]
   export_createSupabaseStorageAdapter["createSupabaseStorageAdapter"]
-  module_src_createSupabaseStorageAdapter_ts --> export_createSupabaseStorageAdapter
-  export_createSupabaseStorageAdapter -.-> export_SupabaseStorageAdapter
+  module_src_features_storage_adapters_createSupabaseStorageAdapter_ts --> export_createSupabaseStorageAdapter
   export_createSupabaseStorageAdapter -.-> export_SupabaseStorageAdapterConfig
-  export_ListedAssetMetadata["ListedAssetMetadata"]
-  module_src_types_ts --> export_ListedAssetMetadata
-  export_ListInput["ListInput"]
-  module_src_types_ts --> export_ListInput
-  export_ListResult["ListResult"]
-  module_src_types_ts --> export_ListResult
-  export_ListResult -.-> export_ListedAssetMetadata
-  export_PublicUrlInput["PublicUrlInput"]
-  module_src_types_ts --> export_PublicUrlInput
-  export_PublicUrlResult["PublicUrlResult"]
-  module_src_types_ts --> export_PublicUrlResult
-  export_PublicUrlResult -.-> export_AssetMetadata
-  export_RemoveInput["RemoveInput"]
-  module_src_types_ts --> export_RemoveInput
-  export_RemoveResult["RemoveResult"]
-  module_src_types_ts --> export_RemoveResult
-  export_SignedUrlInput["SignedUrlInput"]
-  module_src_types_ts --> export_SignedUrlInput
-  export_SignedUrlResult["SignedUrlResult"]
-  module_src_types_ts --> export_SignedUrlResult
-  export_StorageAdapterError["StorageAdapterError"]
-  module_src_types_ts --> export_StorageAdapterError
-  export_StorageAdapterError -.-> export_StorageAdapterErrorCode
-  export_StorageAdapterErrorCode["StorageAdapterErrorCode"]
-  module_src_types_ts --> export_StorageAdapterErrorCode
-  export_StorageResult["StorageResult"]
-  module_src_types_ts --> export_StorageResult
-  export_SupabaseStorageAdapter["SupabaseStorageAdapter"]
-  module_src_types_ts --> export_SupabaseStorageAdapter
-  export_SupabaseStorageAdapter -.-> export_ListInput
-  export_SupabaseStorageAdapter -.-> export_ListResult
-  export_SupabaseStorageAdapter -.-> export_PublicUrlInput
-  export_SupabaseStorageAdapter -.-> export_PublicUrlResult
-  export_SupabaseStorageAdapter -.-> export_RemoveInput
-  export_SupabaseStorageAdapter -.-> export_RemoveResult
-  export_SupabaseStorageAdapter -.-> export_SignedUrlInput
-  export_SupabaseStorageAdapter -.-> export_SignedUrlResult
-  export_SupabaseStorageAdapter -.-> export_StorageResult
-  export_SupabaseStorageAdapter -.-> export_UploadInput
-  export_SupabaseStorageAdapter -.-> export_UploadResult
   export_SupabaseStorageAdapterConfig["SupabaseStorageAdapterConfig"]
-  module_src_types_ts --> export_SupabaseStorageAdapterConfig
-  export_UploadBody["UploadBody"]
-  module_src_types_ts --> export_UploadBody
-  export_UploadInput["UploadInput"]
-  module_src_types_ts --> export_UploadInput
-  export_UploadInput -.-> export_UploadBody
-  export_UploadResult["UploadResult"]
-  module_src_types_ts --> export_UploadResult
-  export_UploadResult -.-> export_AssetMetadata
+  module_src_types_supabaseStorage_ts --> export_SupabaseStorageAdapterConfig

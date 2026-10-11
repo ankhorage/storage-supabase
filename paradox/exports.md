@@ -1,204 +1,26 @@
 # Public API
 
-## AssetMetadata
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:52:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| bucket | property | `string` | yes |  |
-| cacheControl | property | `string \| null` | yes |  |
-| contentType | property | `string \| null` | yes |  |
-| path | property | `string` | yes |  |
-| publicUrl | property | `string` | yes |  |
-| size | property | `number` | yes |  |
-
 ## createSupabaseStorageAdapter
 
 Kind: `function`
-Module: `src/createSupabaseStorageAdapter.ts`
-Source: `src/createSupabaseStorageAdapter.ts:47:1`
+Module: `src/features/storage/adapters/createSupabaseStorageAdapter.ts`
+Source: `src/features/storage/adapters/createSupabaseStorageAdapter.ts:28:1`
+
+Create the provider-neutral storage port implemented by Supabase Storage.
 
 ### Signatures
 
-- `(config: SupabaseStorageAdapterConfig) => SupabaseStorageAdapter`
+- `(config: SupabaseStorageAdapterConfig) => StoragePort`
   - config: `SupabaseStorageAdapterConfig`
-  - returns: `SupabaseStorageAdapter`
-
-## ListedAssetMetadata
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:61:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| bucket | property | `string` | yes |  |
-| contentType | property | `string \| null` | yes |  |
-| createdAt | property | `string \| null` | yes |  |
-| etag | property | `string \| null` | yes |  |
-| path | property | `string` | yes |  |
-| size | property | `number \| null` | yes |  |
-| updatedAt | property | `string \| null` | yes |  |
-
-## ListInput
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:39:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| bucket | property | `string \| undefined` | no |  |
-| cursor | property | `string \| undefined` | no |  |
-| limit | property | `number \| undefined` | no |  |
-| prefix | property | `string \| undefined` | no |  |
-
-## ListResult
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:86:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| assets | property | `readonly ListedAssetMetadata[]` | yes |  |
-| nextCursor | property | `string \| undefined` | no |  |
-
-## PublicUrlInput
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:34:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| bucket | property | `string \| undefined` | no |  |
-| path | property | `string` | yes |  |
-
-## PublicUrlResult
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:82:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| asset | property | `Pick<AssetMetadata, "bucket" \| "path" \| "publicUrl">` | yes |  |
-
-## RemoveInput
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:29:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| bucket | property | `string \| undefined` | no |  |
-| path | property | `string` | yes |  |
-
-## RemoveResult
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:75:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| removed | property | `{ bucket: string; path: string; }` | yes |  |
-
-## SignedUrlInput
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:46:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| bucket | property | `string \| undefined` | no |  |
-| expiresInSeconds | property | `number` | yes |  |
-| path | property | `string` | yes |  |
-
-## SignedUrlResult
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:91:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| asset | property | `{ bucket: string; path: string; signedUrl: string; }` | yes |  |
-
-## StorageAdapterError
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:6:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| cause | property | `unknown` | no |  |
-| code | property | `StorageAdapterErrorCode` | yes |  |
-| message | property | `string` | yes |  |
-
-## StorageAdapterErrorCode
-
-Kind: `unknown`
-Module: `src/types.ts`
-Source: `src/types.ts:3:1`
-
-## StorageResult
-
-Kind: `unknown`
-Module: `src/types.ts`
-Source: `src/types.ts:1:1`
-
-## SupabaseStorageAdapter
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:99:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| createSignedUrl | method | `(input: SignedUrlInput) => Promise<StorageResult<SignedUrlResult>>` | yes |  |
-| getPublicUrl | method | `(input: PublicUrlInput) => Promise<StorageResult<PublicUrlResult>>` | yes |  |
-| list | method | `(input: ListInput) => Promise<StorageResult<ListResult>>` | yes |  |
-| publicUrl | method | `(input: PublicUrlInput) => Promise<StorageResult<PublicUrlResult>>` | yes |  |
-| remove | method | `(input: RemoveInput) => Promise<StorageResult<RemoveResult>>` | yes |  |
-| upload | method | `(input: UploadInput) => Promise<StorageResult<UploadResult>>` | yes |  |
+  - returns: `StoragePort`
 
 ## SupabaseStorageAdapterConfig
 
 Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:12:1`
+Module: `src/types/supabaseStorage.ts`
+Source: `src/types/supabaseStorage.ts:2:1`
+
+Configure the credentials and optional default bucket for a Supabase storage adapter.
 
 ### Members
 
@@ -207,38 +29,3 @@ Source: `src/types.ts:12:1`
 | anonKey | property | `string` | yes |  |
 | bucket | property | `string \| undefined` | no |  |
 | url | property | `string` | yes |  |
-
-## UploadBody
-
-Kind: `unknown`
-Module: `src/types.ts`
-Source: `src/types.ts:18:1`
-
-## UploadInput
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:20:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| body | property | `UploadBody` | yes |  |
-| bucket | property | `string \| undefined` | no |  |
-| cacheControl | property | `string \| undefined` | no |  |
-| contentType | property | `string \| undefined` | no |  |
-| path | property | `string` | yes |  |
-| upsert | property | `boolean \| undefined` | no |  |
-
-## UploadResult
-
-Kind: `type`
-Module: `src/types.ts`
-Source: `src/types.ts:71:1`
-
-### Members
-
-| Name | Kind | Type | Required | Description |
-| --- | --- | --- | --- | --- |
-| asset | property | `AssetMetadata` | yes |  |

@@ -1,7 +1,7 @@
 {
   "name": "@ankhorage/storage-supabase",
   "type": "module",
-  "version": "0.2.109",
+  "version": "1.0.0",
   "description": "Type-safe Supabase Storage adapter for uploads, listing, URL resolution, and asset metadata.",
   "homepage": "https://github.com/ankhorage/storage-supabase#readme",
   "bugs": {
