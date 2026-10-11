@@ -17,7 +17,7 @@
     "baseUrl": ".",
     "types": ["bun", "node"],
     "paths": {
-      "@ankhorage/supabase-storage": ["src/index.ts"]
+      "@ankhorage/storage-supabase": ["src/index.ts"]
     }
   },
   "include": [

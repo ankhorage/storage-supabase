@@ -1,11 +1,11 @@
 {
-  "name": "@ankhorage/supabase-storage",
+  "name": "@ankhorage/storage-supabase",
   "type": "module",
   "version": "0.2.109",
   "description": "Type-safe Supabase Storage adapter for uploads, listing, URL resolution, and asset metadata.",
-  "homepage": "https://github.com/ankhorage/supabase-storage#readme",
+  "homepage": "https://github.com/ankhorage/storage-supabase#readme",
   "bugs": {
-    "url": "https://github.com/ankhorage/supabase-storage/issues"
+    "url": "https://github.com/ankhorage/storage-supabase/issues"
   },
   "license": "MIT",
   "main": "./dist/index.js",
@@ -13,7 +13,7 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankhorage/supabase-storage.git"
+    "url": "git+https://github.com/ankhorage/storage-supabase.git"
   },
   "keywords": [
     "adapter",
@@ -25,15 +25,8 @@
     "typescript"
   ],
   "dependencies": {
+    "@ankhorage/storage": "^0.2.1",
     "@supabase/supabase-js": "^2.117.3"
-  },
-  "peerDependencies": {
-    "@ankhorage/contracts": "^22.8.4"
-  },
-  "peerDependenciesMeta": {
-    "@ankhorage/contracts": {
-      "optional": true
-    }
   },
   "files": [
     "dist",
@@ -48,11 +41,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./contracts": {
-      "types": "./dist/contracts/index.d.ts",
-      "import": "./dist/contracts/index.js",
-      "default": "./dist/contracts/index.js"
     },
     "./package.json": "./package.json"
   },
@@ -75,7 +63,6 @@
     "knip:check": "ankhorage-knip"
   },
   "devDependencies": {
-    "@ankhorage/contracts": "^22.8.90",
     "@ankhorage/devtools": "^2.3.14",
     "@ankhorage/paradox": "^0.2.25",
     "@types/bun": "^1.4.2",

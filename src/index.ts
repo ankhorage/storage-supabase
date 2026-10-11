@@ -1,21 +1,2 @@
-export { createSupabaseStorageAdapter } from './createSupabaseStorageAdapter.js';
-export type {
-  AssetMetadata,
-  ListedAssetMetadata,
-  ListInput,
-  ListResult,
-  PublicUrlInput,
-  PublicUrlResult,
-  RemoveInput,
-  RemoveResult,
-  SignedUrlInput,
-  SignedUrlResult,
-  StorageAdapterError,
-  StorageAdapterErrorCode,
-  StorageResult,
-  SupabaseStorageAdapter,
-  SupabaseStorageAdapterConfig,
-  UploadBody,
-  UploadInput,
-  UploadResult,
-} from './types.js';
+export { createSupabaseStorageAdapter } from './features/storage/adapters/createSupabaseStorageAdapter.js';
+export type { SupabaseStorageAdapterConfig } from './types/supabaseStorage.js';
