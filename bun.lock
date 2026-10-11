@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@ankhorage/supabase-storage",
+      "name": "@ankhorage/storage-supabase",
       "dependencies": {
         "@ankhorage/storage": "^0.2.1",
         "@supabase/supabase-js": "^2.117.3",
