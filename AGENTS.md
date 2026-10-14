@@ -4,7 +4,7 @@
 
 ## Repository
 
-Package: `@ankhorage/supabase-storage`
+Package: `@ankhorage/storage-supabase`
 
 Type-safe Supabase Storage adapter for uploads, listing, URL resolution, and asset metadata.
 
