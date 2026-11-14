@@ -1,5 +1,11 @@
 # @ankhorage/supabase-storage
 
+## 1.0.3
+
+### Patch Changes
+
+- e05cdaa: Add canonical repository metadata for package discovery and documentation.
+
 ## 1.0.2
 
 ### Patch Changes
