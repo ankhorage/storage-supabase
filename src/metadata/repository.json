@@ -5,10 +5,37 @@
   "summary": "Implements the provider-neutral StoragePort with Supabase Storage for upload, removal, listing, and public or signed URL resolution.",
   "purpose": "Provide an explicit Supabase-backed storage adapter that translates provider-neutral storage operations to the Supabase Storage client.",
   "domain": "Supabase object storage adapter",
-  "responsibilities": ["Create a StoragePort implementation from Supabase URL, anonymous key, and optional default bucket configuration.", "Map upload, remove, list, and resolve operations to Supabase Storage requests.", "Validate configuration and map provider or network failures into the shared storage operation result shape."],
-  "boundaries": ["Does not define the provider-neutral storage capability catalog or StoragePort contract.", "Does not own Supabase project provisioning, credentials, or application composition.", "Does not persist asset metadata outside Supabase Storage."],
-  "audience": ["Application maintainers selecting Supabase as their object-storage provider.", "Runtime composition code that requires a configured StoragePort."],
-  "useCases": ["Configure a Supabase-backed StoragePort with an optional default bucket.", "Upload, remove, and list object metadata through common storage operations.", "Resolve an object as a public URL or an expiring signed URL."],
-  "architecture": {"role": "Outbound provider adapter translating StoragePort operations to Supabase Storage.", "invariants": ["The public factory returns the provider-neutral StoragePort.", "Provider configuration is validated before client operations are used.", "Provider and network failures are represented through the shared operation result boundary."]},
-  "constraints": {"limitations": ["Requires a reachable Supabase Storage endpoint and valid anonymous key.", "Signed URL expiry and object behavior are constrained by Supabase Storage."]}
+  "responsibilities": [
+    "Create a StoragePort implementation from Supabase URL, anonymous key, and optional default bucket configuration.",
+    "Map upload, remove, list, and resolve operations to Supabase Storage requests.",
+    "Validate configuration and map provider or network failures into the shared storage operation result shape."
+  ],
+  "boundaries": [
+    "Does not define the provider-neutral storage capability catalog or StoragePort contract.",
+    "Does not own Supabase project provisioning, credentials, or application composition.",
+    "Does not persist asset metadata outside Supabase Storage."
+  ],
+  "audience": [
+    "Application maintainers selecting Supabase as their object-storage provider.",
+    "Runtime composition code that requires a configured StoragePort."
+  ],
+  "useCases": [
+    "Configure a Supabase-backed StoragePort with an optional default bucket.",
+    "Upload, remove, and list object metadata through common storage operations.",
+    "Resolve an object as a public URL or an expiring signed URL."
+  ],
+  "architecture": {
+    "role": "Outbound provider adapter translating StoragePort operations to Supabase Storage.",
+    "invariants": [
+      "The public factory returns the provider-neutral StoragePort.",
+      "Provider configuration is validated before client operations are used.",
+      "Provider and network failures are represented through the shared operation result boundary."
+    ]
+  },
+  "constraints": {
+    "limitations": [
+      "Requires a reachable Supabase Storage endpoint and valid anonymous key.",
+      "Signed URL expiry and object behavior are constrained by Supabase Storage."
+    ]
+  }
 }
