@@ -1,5 +1,11 @@
 # @ankhorage/supabase-storage
 
+## 1.0.5
+
+### Patch Changes
+
+- ee01b1c: Update dependencies: `@supabase/supabase-js`.
+
 ## 1.0.4
 
 ### Patch Changes
